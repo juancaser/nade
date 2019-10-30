@@ -7,8 +7,8 @@
  * 
  * https://github.com/juancaser/nade
  * 
- * This helper adds functionality to load environment environment variables
- * either from .evn or set from apache
+ * This helper adds functionality to load environment variables
+ * either from .env or set from server
  */
 
 if(!function_exists('env')){
