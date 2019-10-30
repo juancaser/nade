@@ -35,10 +35,10 @@ DB_HOST=<database_host>
 <?php
 include('dotenv.php');
 
-define('DB_NAME', env('DB_NAME','<defaul_database_name>'));
-define('DB_USER', env('DB_USER','<defaul_database_user>'));
-define('DB_PASSWORD', env('DB_PASSWORD','<defaul_database_password>'));
-define('DB_HOST', env('DB_HOS','T<defaul_database_host>'));
+define('DB_NAME', env('DB_NAME','<default_database_name>'));
+define('DB_USER', env('DB_USER','<default_database_user>'));
+define('DB_PASSWORD', env('DB_PASSWORD','<default_database_password>'));
+define('DB_HOST', env('DB_HOST','<default_database_host>'));
 ?>
 ```
 
