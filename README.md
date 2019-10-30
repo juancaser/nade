@@ -1,4 +1,4 @@
-# `Not` Another dotEnv function helper
+# Not Another dotEnv function helper
 
 There a lot of ways to do this but this snippet i use for most of my projects, i tend to keep it simple and avoid complicated implementation.
 
