@@ -2,7 +2,11 @@
 
 There a lot of ways to do this but this snippet i use for most of my projects, i tend to keep it simple and avoid complicated implementation.
 
- `env($variable, $default = null, $env_file = '.env')`
+```php
+ env($variable, $default = null, $env_file = '.env')
+```
+
+
 
 | Variable    | Type   | Description                                                  |
 | ----------- | ------ | ------------------------------------------------------------ |
