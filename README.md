@@ -25,7 +25,7 @@ DB_PASSWORD=<database_password>
 DB_HOST=<database_host>
 ```
 
-### How to used
+### How to use
 
 ```php
 <?php
