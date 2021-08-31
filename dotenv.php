@@ -11,6 +11,13 @@
  * either from .env or set from server
  */
 
+/**
+ * Just incase you put your .env file on different path
+ * this will allow you to load it anywhere inside the document
+ * directory
+ */
+if(!defined('ABSPATH')) define('ABSPATH', __DIR__);
+
 if(!function_exists('env')){
 	/**
 	 * Load environment variable
@@ -28,9 +35,14 @@ if(!function_exists('env')){
 		 * 1 = .env
 		 * 2 = Server
 		 */
-		if(file_exists(__DIR__.'/'.$env_file) && function_exists('parse_ini_file')){
+
+		$abspath = trim(ABSPATH,'/');
+		$abspath = trim($abspath,DIRECTORY_SEPARATOR);
+		$env_file  = $abspath.DIRECTORY_SEPARATOR.$env_file;
+
+		if(file_exists($env_file) && function_exists('parse_ini_file')){
 			if(function_exists('parse_ini_file')){
-				$variables = parse_ini_file(__DIR__.'/'.$env_file);        
+				$variables = parse_ini_file($env_file);        
 				if(isset($variables[$variable])) $default = $variables[$variable];
 			}
 		}else{
